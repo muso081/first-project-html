@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+  <!-- 2. Viewport — makes the page work on phones -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 3. Page title — browser tab + Google search result -->
+  <title>Kim Jisoo — Web Portfolio</title>
+
+  <!-- 4. Connect CSS stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- 5. Optional: description for Google snippet -->
+  <meta name="description" content="Portfolio of Kim Jisoo, Web Programming student.">
+
+   <title>Kim Jisoo — Web Programming Portfolio</title>
+</head>
+<body>
+
+<h1>Korean Kimchi Recipe</h1>          <!-- ONE per page -->
+  <h2>Ingredients</h2>
+    <h3>Vegetables</h3>
+    <h3>Seasoning</h3>
+  <h2>Instructions</h2>
+    <h3>Step 1: Prepare the cabbage</h3>
+    <h3>Step 2: Make the paste</h3>
+  <h2>Storage Tips</h2>
+
+   <p>
+    Normal text,
+    <strong>bold text</strong>,
+    <em>italic text</em>,
+    <a href="#">a link</a>,
+    and <span class="highlight">highlighted text</span>
+    all sit on ONE line.
+  </p>
+
+  <!-- span is invisible by default — CSS gives it style -->
+  <style>
+    .highlight { background: yellow; color: black; padding: 2px 4px; }
+  </style>
+
+  <!-- Wrong: block element inside inline -->
+  <!-- <span><p>text</p></span> ← BAD! -->
+
+   <p>Quiz deadline: <strong>Friday 09:00</strong>.
+     Submissions after this time receive zero marks.</p>
+
+  <p>Warning: <strong>never submit without the DOCTYPE.</strong></p>
+
+  <!-- b = bold only, no semantic weight -->
+  <p>The <b>h1</b> element is discussed in topic 4.</p>
+  <!-- (here b is used for a visual style, not importance) -->
+
+  <!-- both render identically in most browsers -->
+  <!-- difference is MEANING, not appearance -->
+    <p>You <em>must</em> submit by Friday.</p>
+  <p><em>You</em> must submit by Friday. (not someone else)</p>
+
+  <!-- i for terms/titles, no semantic emphasis -->
+  <p>The element <i>em</i> stands for emphasis.</p>
+  <p>In Korean, <i>학번</i> means student ID number.</p>
+
+  <!-- code for technical/code terms -->
+  <p>Use the <code>font-size</code> property to change text size.</p>
+
+   <address>
+    Prof. Kim Jisoo<br>
+    Department of Computer Science<br>
+    Gachon University, Seongnam<br>
+    Gyeonggi-do, South Korea
+  </address>
+
+  <!-- Void elements — no closing tag needed -->
+  <img src="photo.jpg" alt="Profile photo">
+  <meta charset="UTF-8">
+  <input type="text" placeholder="Name">
+  <hr>  <!-- horizontal rule -->
+
+  <!-- Wrong uses -->
+  <!-- </br>  ← invalid closing tag for void element -->
+  <!-- <br><br><br><br> to create space ← use CSS margin instead -->
+     <h2>My Skills</h2>
+  <ul>
+    <li>HTML — page structure</li>
+    <li>CSS — visual design</li>
+    <li>JavaScript — interactive behaviour</li>
+    <li>PHP — server-side logic</li>
+  </ul>
+
+  <!-- Navigation (common pattern) -->
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </nav>
+   <h2>How to Create an HTML File</h2>
+  <ol>
+    <li>Open VS Code</li>
+    <li>Create a new file: <code>index.html</code></li>
+    <li>Type the HTML skeleton</li>
+    <li>Save the file (<kbd>Ctrl+S</kbd>)</li>
+    <li>Open in Chrome (double-click the file)</li>
+  </ol>
+
+  <!-- Custom numbering -->
+  <ol type="A">
+    <li>Section A: HTML Basics</li>
+    <li>Section B: CSS Styling</li>
+    <li>Section C: JavaScript</li>
+  </ol>
+
+  <!-- Start at a specific number -->
+  <ol start="3">
+    <li>This is item 3</li>
+    <li>This is item 4</li>
+  </ol>
+
+    <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Web programming student at Gachon.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+  </section>
+
+  <style>
+  .card {
+    border: 1px solid #ccc;
+    padding: 16px;
+    border-radius: 8px;
+  }
+  .featured {
+    border-color: teal;
+    background: #e6f7f4;
+  }
+  .large { font-size: 1.2em; }
+</style>
+
+<div class="card">HTML Basics</div>
+<div class="card">CSS Styling</div>
+<div class="card featured">JavaScript</div>
+<div class="card featured large">Advanced Project</div>
+
+<!-- Multiple classes on one element -->
+<button class="btn btn-primary btn-large">Submit</button>
+
+ <h2>Heading (block)</h2>
+  <p>Paragraph (block)</p>
+  <div>Div (block)</div>
+
+  <!-- INLINE elements — flow on one line -->
+  <p>
+    This paragraph contains
+    <strong>bold (inline)</strong>,
+    <em>italic (inline)</em>,
+    <a href="#">a link (inline)</a>, and
+    <span style="color:teal">coloured text (inline)</span>
+    — all on the same line.
+  </p>
+
+  <!-- CORRECT: inline inside block -->
+  <p><strong>Good</strong> — span inside p</p>
+
+  <!-- WRONG: block inside inline -->
+  <!-- <span><p>Bad</p></span> ← INVALID! -->
+
+</body>
+</html>
