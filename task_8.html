@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>With Div</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: flex-start;
+            gap: 20px;
+            height: 100vh;
+            align-items: space-between;
+            
+        }
+        .box {
+            width: 250px;
+            height: 200px;
+            background-color: lightgray;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid white;
+            text-align: center;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .box img {
+            width: 150px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="box">
+            <p>Favourite Book: 1984</p>
+            <img src="https://picsum.photos/300/200?random=1" alt="The book cover photo">
+        </div>
+
+        <div class="box">
+            <p>Favourite Show: Breaking Bad</p>
+            <img src="https://picsum.photos/300/200?random=2" alt="Breaking Bad poster">
+        </div>
+
+        <div class="box">
+            <p>Favourite Website: MDN</p>
+            <img src="https://picsum.photos/300/200?random=3" alt="MDN Web Docs homepage">
+        </div>
+
+    </div>
+
+</body>
+</html>
